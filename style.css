@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3)), (rgba(0, 0, 0, 0.1));
+  background: url("da.webp") center center/cover;
+  background-repeat: no-repeat;
+}
+.logo {
+  margin-left: 30px;
+  font-size: 20px;
+  color: white;
+  animation: heart 1.4s ease-in-out 2s infinite;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+nav.logo {
+  width: 25%;
+  text-align: center;
+}
+nav .menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  transition: all .5s ease;
+}
+
+.menu a:hover {
+  color: #932ab1;
+}
+
+nav .menu a:first-child {
+  color: #932ab1;
+}
+main {
+  width: 100%;
+  height: 87vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+section h3 {
+  font-size: 45px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+section p {
+  font-size: 25px;
+  font-weight: 500;
+  color: #eee;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px #c703fb;
+}
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all .5s ease;
+}
+section .btn {
+  background-color: #fff;
+  color: black;
+  font-weight: 800;
+}
+
+.btn:hover {
+  background-color: #b501e9;
+  color: black;
+}
+
+section .btn1 {
+  background-color: #b501e9;
+  color: black;
+  font-weight: 800;
+}
+
+.btn1:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.change_content::after {
+  content: "";
+  animation: changetext 10s 4s infinite linear;
+  color: #b501e9;
+}
+/* animation section  */
+@keyframes heart {
+  from {
+    font-size: small;
+  }
+  to {
+    font-size: large;
+  }
+}
+@keyframes changetext {
+  0% {
+    content: " Old Dhaka";
+  }
+  20% {
+    content: "Sonargaon';
+  }
+  40% {
+    content: "Chittagong";
+  }
+  60% {
+    content: "Sylhet";
+  }
+  80% {
+    content: "Cox's Bazar";
+  }
+  100% {
+    content:  "The Sundarbans";
+  }
+}
